@@ -1,0 +1,10 @@
+# Ignore dependency folders
+node_modules/
+.next/
+
+# Ignore local environment variables
+.env
+.env.local
+
+# Ignore Mac system files
+.DS_Store
