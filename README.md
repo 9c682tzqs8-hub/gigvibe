@@ -51,7 +51,7 @@ GigVibe is a full-stack freelancing platform engineered to connect clients with 
 
 ### Database Schema
 The system utilizes an explicit relational database structure enforcing strict foreign key constraints and cascading logic.
-
+```
   ┌──────────────┐             ┌──────────────┐
   │    USERS     │             │    GIGS      │
   ├──────────────┤             ├──────────────┤
@@ -60,7 +60,7 @@ The system utilizes an explicit relational database structure enforcing strict f
   │ password_hash│  ├───────┤  │ title        │
   │ role         │  │id (PK)│  │ budget       │
   └──────────────┘  └───────┘  └──────────────┘
-
+```
 ### API Endpoints Documentation
 
 --> Authentication Routes
