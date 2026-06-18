@@ -83,14 +83,14 @@ The system utilizes an explicit relational database structure enforcing strict f
 * Local PostgreSQL server instance running
 
 ### 1. Clone & Environment Setup
-Bash
+
 ```
 git clone [https://github.com/9c682tzqs8-hub/gigvibe.git](https://github.com/9c682tzqs8-hub/gigvibe.git)
 cd gigvibe/backend
 touch .env
 ```
 * Populate the backend/.env file with the following keys:
-* Bash
+
 ```
 PORT=5000
 DATABASE_URL=postgresql://<user>:<password>@localhost:5432/gigvibe
@@ -99,21 +99,21 @@ JWT_SECRET=your_runtime_cryptographic_secret_string
 ### 2. Initialize Relational Schema
 
 * Execute the definition script against your local database engine:
-Bash
+
 ```
 psql -U postgres -d gigvibe -f schema.sql
 ```
 ### 4. Application Execution
 
 * Launch Backend Engine:
-Bash
+
 ```
 cd backend
 npm install
 npm start
 ```
 * Launch Frontend Interface:
-Bash
+
 ```
 cd ../frontend
 npm install
