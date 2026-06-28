@@ -41,13 +41,14 @@ GigVibe is a full-stack freelancing platform engineered to connect clients with 
 | **CDN Delivery** | Firebase Hosting | Ultra-fast edge deployment for the user interface |
 
 ### System Data Flow
-
+```
 [ Client Browser ] ----( HTTPS / Next.js )----> [ Firebase CDN ]
          │
     (REST APIs)
          ▼
 [ Google Cloud Run ] ---( Connection Pool / SSL )---> [ Neon Postgres Cloud ]
 
+```
 
 ### Database Schema
 The system utilizes an explicit relational database structure enforcing strict foreign key constraints and cascading logic.
